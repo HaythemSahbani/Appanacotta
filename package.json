@@ -1,26 +1,23 @@
 {
-  "name": "angular-webpack-workflow",
-  "version": "1.0.0",
-  "description": "A workflow for Angular made with Webpack",
-  "scripts": {
-    "build": "rimraf dist && webpack --bail --progress --profile",
-    "server": "webpack-dev-server --history-api-fallback --inline --progress",
-    "test": "karma start",
-    "test-watch": "karma start --auto-watch --no-single-run",
-    "start": "npm run server"
-  },
+  "name": "Appanacotta",
+  "private": true,
+  "version": "0.0.2",
+  "description": "A coffee ordering training app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Foxandxss/angular-webpack-workflow.git"
+    "url": "https://github.com/HaythemSahbani/Appanacotta"
   },
-  "author": "Jesus Rodriguez",
-  "license": "MIT",
+  "author": "",
+
   "bugs": {
-    "url": "https://github.com/Foxandxss/angular-webpack-workflow/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/Foxandxss/angular-webpack-workflow",
-  "dependencies": {
-    "angular": "^1.5.0"
+  "homepage": "",
+  "main": "app.js",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
   },
   "devDependencies": {
     "angular-mocks": "^1.5.0",
@@ -51,5 +48,19 @@
     "style-loader": "^0.13.0",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1"
+  },
+  "scripts": {
+    "build": "rimraf dist && webpack --bail --progress --profile",
+    "server": "webpack-dev-server --history-api-fallback --inline --progress",
+    "test": "karma start",
+    "test-watch": "karma start --auto-watch --no-single-run",
+    "start": "npm run server"
+  },
+  "dependencies": {
+    "angular": "~1.5.9",
+    "angular-loader": "~1.5.9",
+    "angular-mocks": "~1.5.9",
+    "angular-ui-router": "~0.3.2",
+    "material-design-lite": "^1.2.1"
   }
 }
