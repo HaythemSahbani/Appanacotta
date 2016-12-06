@@ -109,14 +109,18 @@ function initService(service, place, marker) {
       htmlBody += "</head><body style=''>";
       htmlBody += "<h3>"+result.name+"</h3>";
       htmlBody += result.formatted_address;
-      if(result.website != ""){
-        //htmlBody += "</br><a href='" + result.website + "'>Web Page</a>";
-      }
-      htmlBody += "</br><a href='menu.html' target='_blank'>Order Now</a>";
+      htmlBody += "</br><a href='menu.html?" + replaceAllSpaces(result.name) + "&" + replaceAllSpaces(result.formatted_address) + "' target='_blank'>Order Now</a>";
       htmlBody += "<body>";
       boxText.innerHTML = htmlBody;
 
       infoWindow.setContent(boxText);
       infoWindow.open(map, marker);
   });
+}
+
+function replaceAllSpaces(string) {
+  var tmp = decodeURIComponent(string)
+  for (var i = 0; i < tmp.length; i++) {
+    tmp.replace(" ", "_")
+  }
 }
