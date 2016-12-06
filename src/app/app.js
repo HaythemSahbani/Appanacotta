@@ -1,5 +1,4 @@
 import angular from 'angular';
-import urlRouter from 'angular-ui-router/src/urlRouter';
 
 import '../style/app.css';
 
@@ -19,7 +18,7 @@ class AppCtrl {
 
 const MODULE_NAME = 'app';
 
-angular.module(MODULE_NAME, [urlRouter])
+angular.module(MODULE_NAME, [])
   .directive('app', app)
   .controller('AppCtrl', AppCtrl);
 
