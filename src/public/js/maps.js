@@ -112,7 +112,7 @@ function initService(service, place, marker) {
       if(result.website != ""){
         //htmlBody += "</br><a href='" + result.website + "'>Web Page</a>";
       }
-      htmlBody += "</br><a href='menu.html'>Order Now</a>";
+      htmlBody += "</br><a href='menu.html' target='_blank'>Order Now</a>";
       htmlBody += "<body>";
       boxText.innerHTML = htmlBody;
 
