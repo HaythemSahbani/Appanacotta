@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
  */
 @Component({
 
-  selector: 'tm-navbar',
+  selector: 'an-navbar',
   templateUrl: 'navbar.component.html',
   styleUrls: ['navbar.component.css'],
 })
