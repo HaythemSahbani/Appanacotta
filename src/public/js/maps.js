@@ -80,7 +80,7 @@ function addMarker(place) {
         title: 'Coffee Shop',
         position: place.geometry.location,
         icon: {
-            url: '/img/coffee-icon-512.png',
+            url: './img/coffee-icon-512.png',
             anchor: new google.maps.Point(30, 30),
             scaledSize: new google.maps.Size(60, 60)
         }
