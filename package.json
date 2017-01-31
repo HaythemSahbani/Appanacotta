@@ -1,9 +1,9 @@
 {
- "name": "appanacotta",
+  "name": "appanacotta",
   "private": true,
   "version": "0.0.3",
   "description": "A coffee ordering training app",
-"scripts": {
+  "scripts": {
     "build": "webpack --progress",
     "watch": "npm run build -- --watch",
     "server": "webpack-dev-server --inline --progress --port 3000 --content-base src",
@@ -97,17 +97,17 @@
     "traceur": "^0.0.111",
     "ts-node": "^1.4.3",
     "tslint": "~4.0.0",
-    "typescript": "~2.1.5",
+    "typescript": "2.1.5",
     "walk": "^2.3.9",
     "webpack": "^2.1.0-beta.27",
     "webpack-dev-server": "2.1.0-beta.11",
     "webpack-merge": "^0.15.0",
     "yargs": "^6.0.0"
   },
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/HaythemSahbani/Appanacotta"
-    },
+  },
   "bugs": {
     "url": "todo"
   },
