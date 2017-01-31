@@ -1,6 +1,10 @@
 <!-- this creates a google map on the page with the given lat/lng from -->
 <!-- the component as the initial center of the map: -->
 
-<sebm-google-map [latitude]="lat" [longitude]="lng">
-  <sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
-</sebm-google-map>
+   <sebm-google-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+     <sebm-google-map-marker [latitude]="lat" [longitude]="lng" [label]="label">
+       <sebm-google-map-info-window [disableAutoPan]="true">
+         {{infoText}}
+       </sebm-google-map-info-window>
+     </sebm-google-map-marker>
+   </sebm-google-map>
