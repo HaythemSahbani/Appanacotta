@@ -1,7 +1,7 @@
 {
  "name": "Appanacotta",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A coffee ordering training app",
 "scripts": {
     "build": "webpack --progress",
@@ -106,7 +106,7 @@
   },
    "repository": {
     "type": "git",
-    "url": "https://github.com/HaythemSahbani/Appanacotta",
+    "url": "https://github.com/HaythemSahbani/Appanacotta"
     },
   "bugs": {
     "url": "todo"
