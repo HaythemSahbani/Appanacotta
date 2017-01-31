@@ -1,0 +1,30 @@
+{
+  "Hot Drinks": {
+    "Black coffee" : {
+      "price": "10",
+      "size": [1, 2, 3]
+    },
+    "Mocha":{
+      "price": "20",
+      "size": [2, 3]
+    },
+    "Expresso":{
+      "price": "5",
+      "size": [1, 2]
+    }
+  },
+  "Cold Drinks":{
+    "Black coffee" : {
+      "price": "10",
+      "size": [1, 2, 3]
+    },
+    "Mocha":{
+      "price": "20",
+      "size": [2, 3]
+    },
+    "Expresso":{
+      "price": "5",
+      "size": [1, 2]
+    }
+  }
+}
