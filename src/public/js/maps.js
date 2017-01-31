@@ -74,6 +74,22 @@ function callback(results, status) {
     }
 }
 
+function deviceLocation(){
+    var loc = {};
+    var geocoder = new google.maps.Geocoder();
+    if(google.loader.ClientLocation) {
+        loc.lat = google.loader.ClientLocation.latitude;
+        loc.lng = google.loader.ClientLocation.longitude;
+
+        var latlng = new google.maps.LatLng(loc.lat, loc.lng);
+        geocoder.geocode({'latLng': latlng}, function(results, status) {
+            if(status == google.maps.GeocoderStatus.OK) {
+                alert(results[0]['formatted_address']);
+            };
+        });
+    }
+}
+
 function addMarker(place) {
     var marker = new google.maps.Marker({
         map: map,
