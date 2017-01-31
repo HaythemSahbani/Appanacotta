@@ -5,9 +5,7 @@ var webpackMerge = require('webpack-merge');
 // Webpack Config
 var webpackConfig = {
   entry: {
-    'main': './src/main.browser.ts',
-    'polyfills': './src/polyfills.browser.ts',
-    'vendors': './src/vendors.browser.ts'
+    'main': './src/main.ts'
   },
 
   output: {
