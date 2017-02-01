@@ -13,5 +13,5 @@ export class AppComponent {
   label: string = 'C';
   infoText: string = `Hi, this is the content of the coffee info tooltip`;
 
-  coffeeShop = new CoffeeShop('Starbucks', 1, 1 ,1);
+  coffeeShop = new CoffeeShop('Starbucks', 4.3, 200, 0.8);
 }

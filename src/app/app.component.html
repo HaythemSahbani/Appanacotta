@@ -4,7 +4,14 @@
    <sebm-google-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
      <sebm-google-map-marker [latitude]="lat" [longitude]="lng" [label]="label">
        <sebm-google-map-info-window [disableAutoPan]="true">
-         {{infoText}}
+       <div class="coffee-shop-tooltip">
+          <ul>
+           <li>{{coffeeShop.name}}</li>
+           <li>Raiting: {{coffeeShop.rating}}</li>
+           <li>Waiting time: {{coffeeShop.waitTime}}</li>
+           <li>Distance: {{coffeeShop.distance}}</li>
+         </ul>
+       </div>
        </sebm-google-map-info-window>
      </sebm-google-map-marker>
    </sebm-google-map>

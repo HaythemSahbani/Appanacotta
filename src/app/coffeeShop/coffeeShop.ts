@@ -17,7 +17,7 @@ constructor(name: string, rating:number, waitTime: number, distance: number) {
   this.waitTime = waitTime;
   this.distance = distance;
   this.name = name;
-  this.walkTime = distance;
+  // this.walkTime = distance;
 }
   set walkTime(val: number) {
       // calculate from walk dist;

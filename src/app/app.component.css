@@ -12,3 +12,8 @@ body app-root {
   height: 100%;
   width: 100%;
 }
+
+.coffee-shop-tooltip {
+  background-image: url('../assets/img/photo-1450024529642-858b23834369.jpg');
+  width: 100%;
+}
