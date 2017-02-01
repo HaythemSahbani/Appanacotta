@@ -1,4 +1,4 @@
-Test: User Stories
+Test - User Stories
 
 1. User starts the app
 2. App starts showing user current location in the map. 
@@ -10,4 +10,5 @@ Test: User Stories
 	b. menu page shows sell items
 	c. each item has an image and price tag
 6. User clicks on an item to select the desired item.
+
 
