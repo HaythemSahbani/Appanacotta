@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CoffeeShop } from './CoffeeShop/index';
+import { CoffeeShop } from './coffeeShop/index';
 
 @Component({
  selector: 'app-root',
@@ -13,5 +13,5 @@ export class AppComponent {
   label: string = 'C';
   infoText: string = `Hi, this is the content of the coffee info tooltip`;
 
-  let tooltip = new CoffeeShop('starbucks', 3,5, 200, 2);
+  coffeeShop = new CoffeeShop('Starbucks', 1, 1 ,1);
 }

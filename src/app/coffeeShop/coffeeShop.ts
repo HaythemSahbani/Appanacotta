@@ -5,21 +5,19 @@ export class CoffeeShop {
   private rating: number;
   /* waitTime: date */
 private waitTime: number;
-/*walkTime: date */
-private walkTime: number;
 
-/*walkDist: number in KM */
-private walkDist: number;
+/*distance: number in KM */
+private distance: number;
 
 /* speed in Km/h */
 private speed = 2;
 
-constructor(name: string, rating:number, waitTime: number, walkDist: number) {
+constructor(name: string, rating:number, waitTime: number, distance: number) {
   this.rating = rating;
-  this.walkTime = walkTime;
-  this.walkDist = walkDist;
+  this.waitTime = waitTime;
+  this.distance = distance;
   this.name = name;
-
+  this.walkTime = distance;
 }
   set walkTime(val: number) {
       // calculate from walk dist;

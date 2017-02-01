@@ -1,1 +1,1 @@
-export * from './coffeeShop.component';
+export * from './coffeeShop';
