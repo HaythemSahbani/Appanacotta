@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CoffeeShop } from './CoffeeShop/index';
 
 @Component({
  selector: 'app-root',
@@ -11,4 +12,6 @@ export class AppComponent {
   zoom: number = 16;
   label: string = 'C';
   infoText: string = `Hi, this is the content of the coffee info tooltip`;
+
+  let tooltip = new CoffeeShop('starbucks', 3,5, 200, 2);
 }
